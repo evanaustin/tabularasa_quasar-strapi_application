@@ -52,9 +52,9 @@ See [configuring quasar.conf.js](https://quasar.dev/quasar-cli/quasar-conf-js).
 
 ## Notes
 This tabula rasa project was compiled from a number of critical resources, including:
-    - [strapi.io](https://www.strapi.io)
-    - [quasar.dev](https://www.quasar.dev)
-    - https://strapi.io/blog/how-to-run-a-strapi-dev-stack-with-docker-compose
-    - https://talke.dev/strapi-user-permissions-jwt-cookies
-    - https://dev.to/n_tepluhina/apollo-state-management-in-vue-application-8k0
-    - https://dev.to/quasar/quasar-and-apollo-client-state-without-vuex-2iii
+- [strapi.io](https://www.strapi.io)
+- [quasar.dev](https://www.quasar.dev)
+- https://strapi.io/blog/how-to-run-a-strapi-dev-stack-with-docker-compose
+- https://talke.dev/strapi-user-permissions-jwt-cookies
+- https://dev.to/n_tepluhina/apollo-state-management-in-vue-application-8k0
+- https://dev.to/quasar/quasar-and-apollo-client-state-without-vuex-2iii
