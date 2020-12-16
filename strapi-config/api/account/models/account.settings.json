@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "accounts",
+  "info": {
+    "name": "Account",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "products": {
+      "collection": "product",
+      "via": "supplier"
+    },
+    "buyers": {
+      "collection": "account",
+      "via": "suppliers",
+      "dominant": true
+    },
+    "suppliers": {
+      "collection": "account",
+      "via": "buyers"
+    },
+    "users": {
+      "via": "accounts",
+      "plugin": "users-permissions",
+      "collection": "user",
+      "dominant": true
+    },
+    "modules": {
+      "via": "accounts",
+      "collection": "module"
+    }
+  }
+}
