@@ -13,7 +13,18 @@ Under the current configuration, `docker-compose` will run locally.
 ## Get Started
 
 ### Quasar
-*Section forthcoming...*
+##### Install the dependencies
+`$ yarn` or `$ npm install`
+
+##### Start the app in development mode (hot-code reloading, error reporting, etc.)
+`$ yarn dev` or `$ npm run dev`
+
+##### Build the app for production
+`$ yarn build` or `$ npm run build`
+
+##### Customize the configuration
+See [configuring quasar.conf.js](https://quasar.dev/quasar-cli/quasar-conf-js).
+
 
 ### Strapi
 1. Initiate a new **Strapi** project:
