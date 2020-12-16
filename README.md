@@ -29,5 +29,4 @@ npm install
 4. Make our **Strapi** backend send an HTTP-only cookie (rather than a JWT) upon client authentication. *Note: while this step is not required to get **Strapi** working (it should already be running), it is however required to get our as-is **Quasar** app working).*
     - `$ pwd` : `tabularasa_quasar-strapi`
     - `$ mv strapi-config/config/ strapi/config/`
-    - `$ mv strapi-config/extensions/user-permissions/config/ strapi/extensions/user-permissions/controllers/`
-    - `$ mv strapi-config/extensions/user-permissions/config/ strapi/extensions/user-permissions/controllers/`
+    - `$ mv strapi-config/extensions/ strapi/extensions/`
