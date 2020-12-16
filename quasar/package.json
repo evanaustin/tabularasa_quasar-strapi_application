@@ -1,0 +1,41 @@
+{
+  "name": "quasar",
+  "version": "0.0.1",
+  "description": "My Quasar Application",
+  "productName": "My new app",
+  "cordovaId": "",
+  "capacitorId": "",
+  "author": "Evan Grinde",
+  "private": true,
+  "scripts": {
+    "dev": "GRAPHQL_URI=http://localhost:3000/graphql quasar dev",
+    "build": "quasar build && cp _redirects dist/spa"
+  },
+  "dependencies": {
+    "@quasar/extras": "^1.0.0",
+    "apollo-boost": "^0.4.9",
+    "apollo-cache-inmemory": "^1.6.6",
+    "apollo-client": "^2.6.10",
+    "apollo-link-http": "^1.5.17",
+    "axios": "^0.18.1",
+    "graphql": "^15.0.0",
+    "quasar": "^1.0.0",
+    "vue-apollo": "^3.0.3",
+    "vue2-filters": "^0.11.0"
+  },
+  "devDependencies": {
+    "@quasar/app": "^1.0.0",
+    "@quasar/quasar-app-extension-apollo": "^1.0.0-beta.2"
+  },
+  "engines": {
+    "node": ">= 10.18.1",
+    "npm": ">= 6.13.4",
+    "yarn": ">= 1.21.1"
+  },
+  "browserslist": [
+    "last 1 version, not dead, ie >= 11"
+  ],
+  "resolutions": {
+    "@babel/parser": "7.7.5"
+  }
+}

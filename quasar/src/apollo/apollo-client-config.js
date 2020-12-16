@@ -1,0 +1,78 @@
+import { isAuthenticated } from 'src/boot/auth';
+import {
+  accountTypeDefs,
+  moduleTypeDefs,
+  accountResolvers,
+  moduleResolvers,
+} from 'src/graphql';
+
+export default function (/* { app, router, store, ssrContext, urlPath, redirect } */) {
+  if (!isAuthenticated()) {
+    return false;
+  } else {
+    console.log('initiating Apollo...');
+    return {
+      default: {
+        // 'apollo-link-http' config
+        // https://www.apollographql.com/docs/link/links/http/#options
+        httpLinkConfig: {
+          // you can define the 'uri' here or using an env variable when
+          // running quasar commands, for example:
+          // `GRAPHQL_URI=https://prod.example.com/graphql quasar build`
+          uri: process.env.GRAPHQL_URI,
+          credentials: 'include',
+        },
+
+        // 'apollo-cache-inmemory' config
+        // https://www.apollographql.com/docs/react/caching/cache-configuration/#configuring-the-cache
+        cacheConfig: {},
+
+        // additional config for apollo client
+        // https://github.com/apollographql/apollo-client/blob/version-2.6/docs/source/api/apollo-client.mdx#optional-fields
+        additionalConfig: {
+          typeDefs: {
+            ...accountTypeDefs,
+            ...moduleTypeDefs,
+          },
+          resolvers: {
+            ...accountResolvers,
+            ...moduleResolvers,
+          },
+        },
+      },
+
+      // you can add more options or override the default config for a specific
+      // quasar mode or for dev and prod modes. Examples:
+
+      // ssr: {},
+
+      // dev: {
+      //   httpLinkConfig: {
+      //     uri: process.env.GRAPHQL_URI || 'http://dev.example.com/graphql'
+      //   }
+      // },
+
+      // prod: {
+      //   httpLinkConfig: {
+      //     uri: process.env.GRAPHQL_URI || 'http://prod.example.com/graphql'
+      //   }
+      // },
+
+      // the following gets merged to the config only when using ssr and on server
+      ssrOnServer: {
+        additionalConfig: {
+          // https://apollo.vuejs.org/guide/ssr.html#create-apollo-client
+          ssrMode: true,
+        },
+      },
+
+      // the following gets merged to the config only when using ssr and on client
+      ssrOnClient: {
+        additionalConfig: {
+          // https://apollo.vuejs.org/guide/ssr.html#create-apollo-client
+          ssrForceFetchDelay: 100,
+        },
+      },
+    };
+  }
+}
