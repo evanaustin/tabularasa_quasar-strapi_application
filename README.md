@@ -12,20 +12,6 @@ Under the current configuration, `docker-compose` will run locally.
 
 ## Get Started
 
-### Quasar
-##### Install the dependencies
-`$ yarn` or `$ npm install`
-
-##### Start the app in development mode (hot-code reloading, error reporting, etc.)
-`$ yarn dev` or `$ npm run dev`
-
-##### Build the app for production
-`$ yarn build` or `$ npm run build`
-
-##### Customize the configuration
-See [configuring quasar.conf.js](https://quasar.dev/quasar-cli/quasar-conf-js).
-
-
 ### Strapi
 1. Initiate a new **Strapi** project:
     - `$ docker-compose up -d` (or `dc up -d` with provided alias)
@@ -50,3 +36,16 @@ See [configuring quasar.conf.js](https://quasar.dev/quasar-cli/quasar-conf-js).
     - at least one `account` from Collection Types > Accounts
     - at least one `module` from Collection Types > Modules
 7. Install the GraphQL plugin from General > Marketplace
+
+### Quasar
+##### Install the dependencies
+`$ yarn` or `$ npm install`
+
+##### Start the app in development mode (hot-code reloading, error reporting, etc.)
+`$ yarn dev` or `$ npm run dev`
+
+##### Build the app for production
+`$ yarn build` or `$ npm run build`
+
+##### Customize the configuration
+See [configuring quasar.conf.js](https://quasar.dev/quasar-cli/quasar-conf-js).
