@@ -1,8 +1,8 @@
 # Tabula Rasa: Quasar + Strapi
 
-This is a tabula rasa (blank slate) scaffold for a new Quasar (Vue) + Strapi (Node + MongoDB) application.
+This is a tabula rasa scaffold for a new Quasar (Vue) + Strapi (Node + MongoDB) application.
 
-Under the current configuration, `docker-compose` will run locally.
+Under the current configuration, `docker-compose` will run the application locally.
 
 ***Coming soon**: configuration for a production environment.*
 
@@ -11,6 +11,7 @@ Under the current configuration, `docker-compose` will run locally.
 2. Node
 
 ## Recommendations
+- [Yarn](https://classic.yarnpkg.com/en/docs/cli/global/)
 - [Vue Devtools](https://github.com/vuejs/vue-devtools)
 - [Apollo Client Devtools](https://www.apollographql.com/docs/react/development-testing/developer-tooling/)
 
@@ -55,9 +56,9 @@ Under the current configuration, `docker-compose` will run locally.
 See [configuring quasar.conf.js](https://quasar.dev/quasar-cli/quasar-conf-js).
 
 ## Notes
-This tabula rasa project was compiled from a number of critical resources, including:
-- [strapi.io](https://www.strapi.io)
+This tabula rasa project was compiled from a number of helpful resources, including:
 - [quasar.dev](https://www.quasar.dev)
+- [strapi.io](https://www.strapi.io)
 - https://strapi.io/blog/how-to-run-a-strapi-dev-stack-with-docker-compose
 - https://talke.dev/strapi-user-permissions-jwt-cookies
 - https://dev.to/n_tepluhina/apollo-state-management-in-vue-application-8k0
