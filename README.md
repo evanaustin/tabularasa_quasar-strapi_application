@@ -4,7 +4,7 @@ This is a tabula rasa (blank slate) scaffold for a new Quasar (Vue) + Strapi (No
 
 By default, `docker-compose` will run locally.
 
-***Coming soon**: Configure a production environment.*
+***Coming soon**: configure a production environment.*
 
 ## Pre-Requisites
 1. Docker
@@ -12,7 +12,10 @@ By default, `docker-compose` will run locally.
 
 ## Get Started
 
-#### Strapi
+### Quasar
+*Section forthcoming...*
+
+## Strapi
 1. Initiate a new **Strapi** project
     - `$ docker-compose up -d` (or `dc up -d` with provided alias)
 2. Review diff between /strapi and /strapi-config, specifically:
