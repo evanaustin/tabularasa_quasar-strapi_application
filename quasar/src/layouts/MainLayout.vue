@@ -65,8 +65,8 @@
 </template>
 
 <script>
-import { mapState } from "vuex";
 import axios from "axios";
+import { accountQueries } from "src/graphql";
 
 export default {
   name: "MainLayout",
@@ -97,7 +97,7 @@ export default {
   },
   apollo: {
     me: {
-      query: queries.getMe,
+      query: accountQueries.getMe,
     },
   },
   methods: {
