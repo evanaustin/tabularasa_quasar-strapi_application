@@ -38,9 +38,9 @@ Under the current configuration, `docker-compose` will run the application local
 5. Create the first admin user at http://localhost:3000
 6. From the Strapi admin dashboard (http://localhost:3000/admin/), create an initial dataset for our Quasar app:
     - at least one `user` (in Collection Types > Users)
-    - at least one `account` from Collection Types > Accounts
-    - at least one `module` from Collection Types > Modules
-7. Install the GraphQL plugin from General > Marketplace
+    - at least one `account` (in Collection Types > Accounts)
+    - at least one `module` (in Collection Types > Modules)
+7. Install the GraphQL plugin (in General > Marketplace)
 
 ### Quasar
 ##### Install the dependencies
