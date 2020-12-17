@@ -16,7 +16,6 @@
 </template>
 
 <script>
-
 import {
   accountQueries,
   moduleQueries,
