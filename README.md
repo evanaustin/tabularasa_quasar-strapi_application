@@ -29,13 +29,13 @@ The current configuration is for local development, but may be modified for any 
     - `./extensions/user-permissions/controllers/`
 3. Use our included API model to get up and running with basic `account` and `module` data types:
     - `$ pwd` : `tabularasa_quasar-strapi`
-    - `$ mv strapi-config/api/ strapi/`
+    - `$ rsync -a strapi-config/api/ strapi/api`
 4. Make our **Strapi** backend send an HTTP-only cookie (rather than a JWT) upon client authentication:
     - `$ pwd` : `tabularasa_quasar-strapi`
-    - `$ mv strapi-config/.env strapi/`
-    - `$ mv strapi-config/config/ strapi/`
-    - `$ mv strapi-config/extensions/ strapi/`
-    - `$ rm -r strapi-config`
+    - `$ cp strapi-config/.env strapi/`
+    - `$ rsync -a strapi-config/config/ strapi/config`
+    - `$ rsync -a strapi-config/extensions/ strapi/extensions`
+    - *optional*: `$ rm -r strapi-config`
     - `$ docker-compose up -d` (or `dc up -d` with provided alias)
 5. Create the first admin user at http://localhost:3000
 6. From the Strapi admin dashboard (http://localhost:3000/admin/), create an initial dataset for our Quasar app:
