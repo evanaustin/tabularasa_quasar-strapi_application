@@ -2,7 +2,7 @@
 
 This is a tabula rasa scaffold for a new Quasar (Vue) + Strapi (Node + MongoDB) application.
 
-Under the current configuration, `docker-compose` will run the application locally.
+The current configuration is for local development, but may be modified for any environment.
 
 ***Coming soon**: configuration for a production environment.*
 
@@ -19,7 +19,8 @@ Under the current configuration, `docker-compose` will run the application local
 
 ### Strapi
 1. Initiate a new **Strapi** project:
-    - `$ docker-compose up -d` (or `dc up -d` with provided alias)
+    - `$ docker-compose up -d` (or `dc up -d` with the provided alias)
+    - *optional*: `$ docker-compose logs --tail=all -f | grep strapi` (or `log -s` with the provided alias) to watch the log as Strapi builds for the first time (it will take a few minutes)
 2. Review diff between `/strapi` and `/strapi-config`, specifically:
     - `./api/`
     - `./config/`
