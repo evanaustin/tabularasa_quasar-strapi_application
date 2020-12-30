@@ -29,7 +29,7 @@ The current configuration is for local development, but may be modified for any 
     - `./extensions/user-permissions/controllers/`
 3. Use our included API model to get up and running with basic `account` and `module` data types:
     - `$ pwd` : `tabularasa_quasar-strapi`
-    - `$ mv strapi-config/api/ strapi/api/`
+    - `$ mv strapi-config/api/ strapi/`
 4. Make our **Strapi** backend send an HTTP-only cookie (rather than a JWT) upon client authentication:
     - `$ pwd` : `tabularasa_quasar-strapi`
     - `$ mv strapi-config/.env strapi/`
