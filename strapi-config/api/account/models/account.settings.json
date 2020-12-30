@@ -17,10 +17,6 @@
     "description": {
       "type": "richtext"
     },
-    "products": {
-      "collection": "product",
-      "via": "supplier"
-    },
     "buyers": {
       "collection": "account",
       "via": "suppliers",
