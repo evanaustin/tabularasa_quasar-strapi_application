@@ -2,6 +2,8 @@
 
 This is a tabula rasa scaffold for a new Quasar (Vue) + Strapi (Node + MongoDB) application.
 
+This application uses [Apollo](https://apollo.vuejs.org) to pull data to the Quasar client, relying primarily on Strapi's built-in GraphQL endpoint. We'll also use Apollo as our client-side cache.
+
 The current configuration is for local development, but may be modified for any environment.
 
 ***Coming soon**: configuration for a production environment.*
@@ -17,7 +19,7 @@ The current configuration is for local development, but may be modified for any 
 
 ## Recommendations
 - [Yarn](https://classic.yarnpkg.com/en/docs/cli/global/)
-- [NVM] (https://github.com/nvm-sh/nvm)
+- [NVM](https://github.com/nvm-sh/nvm)
 - [Vue Devtools](https://github.com/vuejs/vue-devtools)
 - [Apollo Client Devtools](https://www.apollographql.com/docs/react/development-testing/developer-tooling/)
 
@@ -45,13 +47,15 @@ The current configuration is for local development, but may be modified for any 
     - `$ rsync -a strapi-config/config/ strapi/config`
     - `$ rsync -a strapi-config/extensions/ strapi/extensions`
     - *optional*: `$ rm -r strapi-config`
+7. Spin up some fresh containers:
     - `$ docker-compose up -d` (or `dc up -d` with provided alias)
-7. Check out the **Strapi** dashboard and create the first admin user at http://localhost:3000/admin
-8. From the dashboard, create an initial dataset for our Quasar app:
+8. Check out the **Strapi** dashboard and create the first admin user:
+    - http://localhost:3000/admin
+9. From the dashboard, create an initial dataset for our Quasar app:
     - at least one `user` (in Collection Types > Users)
     - at least one `account` (in Collection Types > Accounts)
     - at least one `module` (in Collection Types > Modules)
-9. Install the GraphQL plugin (in General > Marketplace)
+10. Install the GraphQL plugin (in General > Marketplace)
 
 ### Quasar
 ##### Install the dependencies
