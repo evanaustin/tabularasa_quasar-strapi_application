@@ -19,8 +19,9 @@ The current configuration is for local development, but may be modified for any 
 
 ### Strapi
 1. Initiate a new **Strapi** project:
-    - `$ docker-compose up -d` (or `dc up -d` with the provided alias)
-    - *optional*: `$ docker-compose logs --tail=all -f | grep strapi` (or `log -s` with the provided alias) to watch the log as Strapi builds for the first time (it will take a few minutes)
+    - `$ docker-compose up -d` (or `dc up -d` with the provided alias) to build the project
+    - `$ docker-compose logs --tail=all -f | grep strapi` (or `log -s` with the provided alias) to watch the log as Strapi builds for the first time (it will take a few minutes)
+    - `$ docker-compose down` (or `dc down` with provided alias) to stop and remove our new containers
 2. Review diff between `/strapi` and `/strapi-config`, specifically:
     - `./api/`
     - `./config/`
@@ -31,10 +32,10 @@ The current configuration is for local development, but may be modified for any 
     - `$ mv strapi-config/api/ strapi/api/`
 4. Make our **Strapi** backend send an HTTP-only cookie (rather than a JWT) upon client authentication:
     - `$ pwd` : `tabularasa_quasar-strapi`
-    - `$ docker-compose down` (or `dc down` with provided alias)
-    - `$ mv strapi-config/.env strapi/.env`
-    - `$ mv strapi-config/config/ strapi/config/`
-    - `$ mv strapi-config/extensions/ strapi/extensions/`
+    - `$ mv strapi-config/.env strapi/`
+    - `$ mv strapi-config/config/ strapi/`
+    - `$ mv strapi-config/extensions/ strapi/`
+    - `$ rm -r strapi-config`
     - `$ docker-compose up -d` (or `dc up -d` with provided alias)
 5. Create the first admin user at http://localhost:3000
 6. From the Strapi admin dashboard (http://localhost:3000/admin/), create an initial dataset for our Quasar app:
