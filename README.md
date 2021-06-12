@@ -1,4 +1,4 @@
-# Tabula Rasa: Quasar + Strapi
+# Tabula Rasa: Quasar + Strapi (Application)
 
 This is a tabula rasa scaffold for a new Quasar (Vue) + Strapi (Node + MongoDB) application.
 
