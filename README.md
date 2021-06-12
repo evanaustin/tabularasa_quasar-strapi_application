@@ -9,9 +9,9 @@ The current configuration is for local development, but may be modified for any 
 ***Coming soon**: configuration for a production environment.*
 
 ## Most recent successful build:
-- 12:35PM EDT 12/30/2020
-- macOS 11.1 on Apple M1
-- Docker Desktop Preview (Docker Engine v20.10.0 on darwin/arm64)
+- 10:12PM EST 6/11/2021
+- macOS 11.3.1 on Apple M1
+- Docker Desktop 3.3.3 (Engine v20.10.6 on darwin/arm64)
 
 ## Pre-Requisites
 1. Docker
